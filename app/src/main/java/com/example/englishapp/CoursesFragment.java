@@ -4,13 +4,10 @@ package com.example.englishapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -48,6 +45,7 @@ public class CoursesFragment extends Fragment {
         arrayListLesson = new ArrayList<>();
         englishAdapter = new EnglishAdapter(getContext(), R.layout.custom_english, arrayListLesson);
         lvLesson.setAdapter(englishAdapter);
+
         emulatorEnglish();
         addEvents();
         return view;
