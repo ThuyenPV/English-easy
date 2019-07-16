@@ -7,12 +7,17 @@
         android:title="@string/nav_home" />
     <item
         android:id="@+id/nav_notifi"
-        android:icon="@drawable/baseline_notifications_black_24dp"
+        android:icon="@drawable/baseline_shopping_cart_black_24dp"
         android:title="@string/nav_notifi" />
     <item
         android:id="@+id/nav_account"
-        android:icon="@drawable/baseline_person_black_24dp"
+        android:icon="@drawable/baseline_school_black_24dp"
         android:title="@string/nav_person" />
+    <item
+        android:id="@+id/nav_translate"
+        android:icon="@drawable/baseline_translate_black_24dp"
+        android:title="@string/nav_translate" />
+
 
 
 </menu>

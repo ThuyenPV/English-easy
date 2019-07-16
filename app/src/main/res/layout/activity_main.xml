@@ -12,7 +12,7 @@
         android:id="@+id/nav_main"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
         app:itemIconTint="@color/nav_itemts_color"
         app:itemTextColor="@color/nav_itemts_color"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">EnglishApp</string>
     <string name="nav_home">Home</string>
-    <string name="nav_notifi">Notification</string>
-    <string name="nav_person">Account</string>
+    <string name="nav_notifi">Course</string>
+    <string name="nav_person">Exercise</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_translate">Translate</string>
 </resources>

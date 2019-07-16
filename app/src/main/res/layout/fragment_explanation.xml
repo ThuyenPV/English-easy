@@ -16,6 +16,8 @@
 
 
         <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
             android:id="@+id/ll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -76,7 +78,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="convert your distance exactly"
+                            android:text="It's to practise the past simple. "
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -127,7 +129,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="convert your distance exactly"
+                            android:text="Here's another exercise about the past simple of irregular verbs."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -186,7 +188,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="convert your temperature exactly"
+                            android:text="This exercise about irregular verbs is to practise making the past participle."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -236,7 +238,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Convert your speed exactly"
+                            android:text="Here's another exercise about making the past participle."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -293,7 +295,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="convert your temperature exactly"
+                            android:text="This exercise is to practise making the present simple with the verb 'be'."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -343,7 +345,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Convert your speed exactly"
+                            android:text="This exercise is to practise making the present simple with the verb 'be'."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -400,7 +402,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="convert your temperature exactly"
+                            android:text="Here's an exercise about making 'yes / no' questions with the verb 'be'."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -450,7 +452,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Convert your speed exactly"
+                            android:text="Here's another present simple exercise - this one is about making 'wh' questions with the verb 'be'."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -507,7 +509,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="convert your temperature exactly"
+                            android:text="This is a mixed present simple exercise using the verb 'be' - it includes positive, negative and questions."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -557,7 +559,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Convert your speed exactly"
+                            android:text="This is the second mixed present simple exercise using the verb 'be' - it includes positive, negative and questions."
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>

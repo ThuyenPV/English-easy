@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private ExercisesFragment exercisesFragment;
     private ExplanationFragment explanationFragment;
     private CoursesFragment coursesFragment;
+    private TranslateFragment translateFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,19 +36,19 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.nav_home:
-                        mMainNav.setItemBackgroundResource(R.color.colorAccent);
                         setFragment(coursesFragment);
                         return true;
 
                     case R.id.nav_notifi:
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimary);
                         setFragment(exercisesFragment);
                         return true;
 
 
                     case R.id.nav_account:
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
                         setFragment(explanationFragment);
+                        return true;
+                    case R.id.nav_translate:
+                        setFragment(translateFragment);
                         return true;
 
                     default:
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         exercisesFragment = new ExercisesFragment();
         coursesFragment = new CoursesFragment();
         explanationFragment = new ExplanationFragment();
+        translateFragment=new TranslateFragment();
 
         setFragment(coursesFragment);
 
