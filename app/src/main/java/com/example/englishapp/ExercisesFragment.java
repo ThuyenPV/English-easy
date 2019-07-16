@@ -4,6 +4,7 @@ package com.example.englishapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,16 +14,16 @@ import android.widget.LinearLayout;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ExercisesFragment extends Fragment implements View.OnClickListener{
-    private LinearLayout level1,level2,level3,level4;
+public class ExercisesFragment extends Fragment implements View.OnClickListener {
+    private LinearLayout level1, level2, level3, level4;
 
     public static int COURSES_ONE = 0;
-    public static int COURSES_TWO= 1;
+    public static int COURSES_TWO = 1;
     public static int COURSES_THREE = 2;
     public static int COURSES_FOUR = 3;
 
 
-    public static int DEFAULT_COURSES= COURSES_ONE;
+    public static int DEFAULT_COURSES = COURSES_ONE;
 
     public ExercisesFragment() {
         // Required empty public constructor
@@ -59,26 +60,26 @@ public class ExercisesFragment extends Fragment implements View.OnClickListener{
         int id = v.getId();
         if (id == R.id.level1) {
             DEFAULT_COURSES = COURSES_ONE;
-            Intent intent = new Intent(getContext(), DetailLessonActivity.class);
+            Intent intent = new Intent(getContext(), ExercisesActivity.class);
             intent.putExtra("DEFAULT_CONVERT", DEFAULT_COURSES);
             startActivity(intent);
         }
         if (id == R.id.level2) {
             DEFAULT_COURSES = COURSES_TWO;
-            Intent intent = new Intent(getContext(), DetailLessonActivity.class);
-            intent.putExtra("DEFAULT_CONVERT", DEFAULT_COURSES);
+            Intent intent = new Intent(getContext(), ExercisesActivity.class);
+            intent.putExtra("DEFAULT_COURSES", DEFAULT_COURSES);
             startActivity(intent);
         }
         if (id == R.id.level3) {
             DEFAULT_COURSES = COURSES_THREE;
-            Intent intent = new Intent(getContext(), DetailLessonActivity.class);
-            intent.putExtra("DEFAULT_CONVERT", DEFAULT_COURSES);
+            Intent intent = new Intent(getContext(), ExercisesActivity.class);
+            intent.putExtra("DEFAULT_COURSES", DEFAULT_COURSES);
             startActivity(intent);
         }
         if (id == R.id.level4) {
             DEFAULT_COURSES = COURSES_FOUR;
-            Intent intent = new Intent(getContext(), DetailLessonActivity.class);
-            intent.putExtra("DEFAULT_CONVERT", DEFAULT_COURSES);
+            Intent intent = new Intent(getContext(), ExercisesActivity.class);
+            intent.putExtra("DEFAULT_COURSES", DEFAULT_COURSES);
             startActivity(intent);
         }
     }
