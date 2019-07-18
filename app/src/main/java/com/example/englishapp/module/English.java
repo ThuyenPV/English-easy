@@ -1,4 +1,4 @@
-package com.example.englishapp;
+package com.example.englishapp.module;
 
 public class English {
     private int id;

@@ -1,9 +1,11 @@
-package com.example.englishapp;
+package com.example.englishapp.presenter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.englishapp.R;
 
 public class ExplanationActivity extends AppCompatActivity {
     private WebView webView;

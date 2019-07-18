@@ -1,4 +1,4 @@
-package com.example.englishapp;
+package com.example.englishapp.view;
 
 
 import android.content.Intent;
@@ -9,6 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.example.englishapp.presenter.DetailLessonActivity;
+import com.example.englishapp.module.English;
+import com.example.englishapp.module.EnglishAdapter;
+import com.example.englishapp.R;
 
 import java.util.ArrayList;
 
@@ -27,7 +32,7 @@ public class CoursesFragment extends Fragment {
     public static ArrayList<English> arrayListLesson;
 
     public static ArrayList<English> arrSearch = new ArrayList<>();
-    EnglishAdapter englishAdapter;
+    private EnglishAdapter englishAdapter;
 
     public CoursesFragment() {
 

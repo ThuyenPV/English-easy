@@ -1,4 +1,4 @@
-package com.example.englishapp;
+package com.example.englishapp.presenter;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -8,6 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
+
+import com.example.englishapp.R;
+import com.example.englishapp.view.CoursesFragment;
+import com.example.englishapp.view.ExercisesFragment;
+import com.example.englishapp.view.ExplanationFragment;
+import com.example.englishapp.view.TranslateFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
                         setFragment(exercisesFragment);
                         return true;
 
-
                     case R.id.nav_account:
                         setFragment(explanationFragment);
                         return true;
@@ -60,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setFragment(Fragment fragment) {
-        FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.main_frame, fragment);
         fragmentTransaction.commit();
 
@@ -74,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         exercisesFragment = new ExercisesFragment();
         coursesFragment = new CoursesFragment();
         explanationFragment = new ExplanationFragment();
-        translateFragment=new TranslateFragment();
+        translateFragment = new TranslateFragment();
 
         setFragment(coursesFragment);
 

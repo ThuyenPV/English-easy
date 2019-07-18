@@ -1,13 +1,15 @@
-package com.example.englishapp;
+package com.example.englishapp.module;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.englishapp.module.English;
+import com.example.englishapp.R;
 
 import java.util.ArrayList;
 

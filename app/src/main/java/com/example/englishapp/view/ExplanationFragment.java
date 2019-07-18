@@ -1,4 +1,4 @@
-package com.example.englishapp;
+package com.example.englishapp.view;
 
 
 import android.content.Intent;
@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import com.example.englishapp.presenter.ExplanationActivity;
+import com.example.englishapp.R;
 
 
 /**

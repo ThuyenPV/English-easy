@@ -1,4 +1,4 @@
-package com.example.englishapp;
+package com.example.englishapp.view;
 
 
 
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.englishapp.R;
 
 
 /**

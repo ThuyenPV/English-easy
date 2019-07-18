@@ -1,8 +1,12 @@
-package com.example.englishapp;
+package com.example.englishapp.presenter;
 
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.englishapp.R;
+import com.example.englishapp.module.DetailLessonAdapter;
+import com.example.englishapp.view.CoursesFragment;
 
 public class DetailLessonActivity extends AppCompatActivity {
     private ViewPager viewPager;
