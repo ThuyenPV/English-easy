@@ -11,10 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".presenter.ExplanationActivity"></activity>
-        <activity android:name=".presenter.ExercisesActivity" />
-        <activity android:name=".presenter.DetailLessonActivity" />
-        <activity android:name=".presenter.MainActivity">
+        <activity android:name="com.thuyenpham.englishapp.presenter.CoursesActivity"></activity>
+        <activity android:name="com.thuyenpham.englishapp.presenter.ExplanationActivity" />
+        <activity android:name="com.thuyenpham.englishapp.presenter.ExercisesActivity" />
+        <activity android:name="com.thuyenpham.englishapp.presenter.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
