@@ -22,15 +22,26 @@ public class EnglishAdapter extends ArrayAdapter<English> {
         this.objects=objects;
     }
 
+    public class ViewHolder{
+        TextView txtLesson;
+    }
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater layoutInflater= (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView=layoutInflater.inflate(R.layout.custom_english,null);
-
-        TextView txtLesson=convertView.findViewById(R.id.txtLesson);
+        ViewHolder viewHolder;
+        if(convertView==null){
+            viewHolder=new ViewHolder();
+            LayoutInflater layoutInflater= (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView=layoutInflater.inflate(R.layout.custom_english,null);
+            viewHolder.txtLesson=convertView.findViewById(R.id.txtLesson);
+            convertView.setTag(viewHolder);
+        }
+        else{
+            viewHolder= (ViewHolder) convertView.getTag();
+        }
 
         English english=this.objects.get(position);
-        txtLesson.setText(english.getNameLesson());
+        viewHolder.txtLesson.setText(english.getNameLesson());
 
         return convertView;
     }

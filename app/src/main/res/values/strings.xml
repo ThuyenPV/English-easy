@@ -8,4 +8,94 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nav_translate">Translate</string>
 
+
+    <string-array name="arrLink">
+        <item>https://www.perfect-english-grammar.com/present-simple.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-use.html</item>
+        <item>https://www.perfect-english-grammar.com/present-continuous.html</item>
+        <item>https://www.perfect-english-grammar.com/present-continuous-use.html</item>
+        <item>https://www.perfect-english-grammar.com/present-perfect.html</item>
+        <item>https://www.perfect-english-grammar.com/present-perfect-use.html</item>
+        <item>https://www.perfect-english-grammar.com/present-perfect-continuous.html</item>
+        <item>https://www.perfect-english-grammar.com/present-perfect-continuous-use.html</item>
+        <item>https://www.perfect-english-grammar.com/past-simple.html</item>
+        <item>https://www.perfect-english-grammar.com/past-simple-use.html</item>
+        <item>https://www.perfect-english-grammar.com/past-continuous.html</item>
+        <item>https://www.perfect-english-grammar.com/past-continuous-use.html</item>
+        <item>https://www.perfect-english-grammar.com/past-perfect.html</item>
+        <item>https://www.perfect-english-grammar.com/past-perfect-use.html</item>
+        <item>https://www.perfect-english-grammar.com/past-perfect-continuous.html</item>
+        <item>https://www.perfect-english-grammar.com/past-perfect-continuous-use.html</item>
+        <item>https://www.perfect-english-grammar.com/simple-future.html</item>
+        <item>https://www.perfect-english-grammar.com/simple-future-use.html</item>
+        <item>https://www.perfect-english-grammar.com/future-continuous.html</item>
+        <item>https://www.perfect-english-grammar.com/future-progressive-tense-use.html</item>
+        <item>https://www.perfect-english-grammar.com/future-perfect.html</item>
+        <item>https://www.perfect-english-grammar.com/future-perfect-tense-use.html</item>
+        <item>https://www.perfect-english-grammar.com/future-perfect-continuous.html</item>
+        <item>https://www.perfect-english-grammar.com/future-perfect-continuous-use.html</item>
+        <item>https://www.perfect-english-grammar.com/will-or-be-going-to.html</item>
+        <item>https://www.perfect-english-grammar.com/present-perfect-or-past-simple.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-or-present-continuous.html</item>
+        <item>https://www.perfect-english-grammar.com/present-perfect-simple-or-present-perfect-continuous.html</item>
+        <item>https://www.perfect-english-grammar.com/grammar-exercises.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-spelling.html</item>
+        <item>https://www.perfect-english-grammar.com/adverbs-of-frequency.html</item>
+        <item>https://www.perfect-english-grammar.com/irregular-verbs.html</item>
+        <item>https://www.perfect-english-grammar.com/how-to-pronounce-ed.html</item>
+        <item>https://www.perfect-english-grammar.com/stative-verbs.html</item>
+    </string-array>
+
+    <string-array name="arrCourse">
+        <item>https://perfect-english-grammar3.teachable.com/p/a1-a2-english-grammar-for-learners-of-english</item>
+        <item>https://perfect-english-grammar3.teachable.com/p/level-1-phrasal-verbs</item>
+        <item>https://perfect-english-grammar3.teachable.com/p/conditionals-complete-course-levels-1-3</item>
+        <item>https://perfect-english-grammar3.teachable.com/p/30-day-challenge-phrasal-verb</item>
+
+    </string-array>
+
+    <string-array name="arrExersise">
+        <item>https://www.perfect-english-grammar.com/irregular-verbs-exercise-1.html</item>
+        <item>https://www.perfect-english-grammar.com/irregular-verbs-exercise-2.html</item>
+        <item>https://www.perfect-english-grammar.com/irregular-verbs-exercise-3.html</item>
+        <item>https://www.perfect-english-grammar.com/irregular-verbs-exercise-4.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-exercise-11.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-exercise-10.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-exercise-12.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-exercise-13.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-exercise-14.html</item>
+        <item>https://www.perfect-english-grammar.com/present-simple-exercise-15.html</item>
+    </string-array>
+
+    <string-array name="arrLesson">
+        <item>Present Simple Form</item>
+        <item>Present Simple Use</item>
+        <item>Present Continuous Form</item>
+        <item>Present Continuous Use</item>
+        <item>Present Perfect Simple Form</item>
+        <item>Present Perfect Simple Use</item>
+        <item>Present Perfect Continuous Form</item>
+        <item>Present Perfect Continuous Use</item>
+        <item>Past Simple Form</item>
+        <item>Past Simple Use</item>
+        <item>Past Continuous Form</item>
+        <item>Past Continuous Use</item>
+        <item>Past Perfect Simple Form</item>
+        <item>Past Perfect Simple Use</item>
+        <item>Past Perfect Continuous Form</item>
+        <item>Past Perfect Continuous Use</item>
+        <item>Future Simple Form</item>
+        <item>Future Simple Use</item>
+        <item>Future Continuous Form</item>
+        <item>Future Continuous Use</item>
+        <item>Future Perfect Simple Form</item>
+        <item>Future Perfect Simple Use</item>
+        <item>Future Perfect Continuous Form</item>
+        <item>Future Perfect Continuous Use</item>
+        <item>How to choose Future with will or future with be going to</item>
+        <item>How to choose Present Perfect or Past Simple?</item>
+        <item>How to choose Present Simple or Present Continuous?</item>
+        <item>How to choose Present Perfect Simple or Present Perfect Continuous?</item>
+    </string-array>
+
 </resources>

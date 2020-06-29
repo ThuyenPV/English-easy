@@ -30,14 +30,14 @@ public class CoursesFragment extends Fragment {
     public CoursesFragment() {
 
     }
-
+    String[] arrayLesson;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         View view = layoutInflater.inflate(R.layout.fragment_courses, container, false);
-
+        arrayLesson=getResources().getStringArray(R.array.arrLesson);
 
         lvLesson = view.findViewById(R.id.lvLesson);
         arrayListLesson = new ArrayList<>();
@@ -48,38 +48,6 @@ public class CoursesFragment extends Fragment {
         addEvents();
         return view;
     }
-
-    String[] arrayLesson={
-            "Present Simple Form",
-            "Present Simple Use",
-            "Present Continuous Form",
-            "Present Continuous Use",
-            "Present Perfect Simple Form",
-            "Present Perfect Simple Use",
-            "Present Perfect Continuous Form",
-            "Present Perfect Continuous Use",
-            "Past Simple Form",
-            "Past Simple Use",
-            "Past Continuous Form",
-            "Past Continuous Use",
-            "Past Perfect Simple Form",
-            "Past Perfect Simple Use",
-            "Past Perfect Continuous Form",
-            "Past Perfect Continuous Use",
-            "Future Simple Form",
-            "Future Simple Use",
-            "Future Continuous Form",
-            "Future Continuous Use",
-            "Future Perfect Simple Form",
-            "Future Perfect Simple Use",
-            "Future Perfect Continuous Form",
-            "Future Perfect Continuous Use",
-            "How to choose: Future with 'will' or future with 'be going to'?",
-            "How to choose: Present Perfect or Past Simple?",
-            "How to choose: Present Simple or Present Continuous?",
-            "How to choose: Present Perfect Simple or Present Perfect Continuous?",
-    };
-
 
     private void emulatorEnglish() {
         for(int i=0;i<arrayLesson.length;i++){

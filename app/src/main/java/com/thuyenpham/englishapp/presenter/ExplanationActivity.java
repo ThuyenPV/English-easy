@@ -10,24 +10,13 @@ import com.example.englishapp.R;
 public class ExplanationActivity extends AppCompatActivity {
     private WebView webView;
     private int CONVERTTYPE;
-    String[] arrExercises={
-            "https://www.perfect-english-grammar.com/irregular-verbs-exercise-1.html",
-            "https://www.perfect-english-grammar.com/irregular-verbs-exercise-2.html",
-            "https://www.perfect-english-grammar.com/irregular-verbs-exercise-3.html",
-            "https://www.perfect-english-grammar.com/irregular-verbs-exercise-4.html",
-            "https://www.perfect-english-grammar.com/present-simple-exercise-11.html",
-            "https://www.perfect-english-grammar.com/present-simple-exercise-10.html",
-            "https://www.perfect-english-grammar.com/present-simple-exercise-12.html",
-            "https://www.perfect-english-grammar.com/present-simple-exercise-13.html",
-            "https://www.perfect-english-grammar.com/present-simple-exercise-14.html",
-            "https://www.perfect-english-grammar.com/present-simple-exercise-15.html",
-    };
+    String[] arrExercises;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explanation);
-
+        arrExercises=getResources().getStringArray(R.array.arrExersise);
         webView = findViewById(R.id.expl_webview);
         addConvertType();
     }
