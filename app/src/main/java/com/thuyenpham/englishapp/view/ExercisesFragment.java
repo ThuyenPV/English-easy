@@ -1,15 +1,19 @@
 package com.thuyenpham.englishapp.view;
 
 
+import android.app.Activity;
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.englishapp.R;
+import com.example.englishapp.databinding.FragmentExplanationBinding;
 import com.thuyenpham.englishapp.presenter.ExercisesActivity;
 
 
@@ -17,7 +21,7 @@ import com.thuyenpham.englishapp.presenter.ExercisesActivity;
  * A simple {@link Fragment} subclass.
  */
 public class ExercisesFragment extends Fragment implements View.OnClickListener {
-    private LinearLayout level1, level2, level3, level4;
+//    private LinearLayout level1, level2, level3, level4;
 
     public static int COURSES_ONE = 0;
     public static int COURSES_TWO = 1;
@@ -31,28 +35,19 @@ public class ExercisesFragment extends Fragment implements View.OnClickListener 
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         View view = layoutInflater.inflate(R.layout.fragment_exercises, container, false);
 
-        level1 = view.findViewById(R.id.level1);
-        level2 = view.findViewById(R.id.level2);
-        level3 = view.findViewById(R.id.level3);
-        level4 = view.findViewById(R.id.level4);
+        FragmentExplanationBinding binding= DataBindingUtil.setContentView((Activity) getContext(),R.layout.fragment_exercises);
+        binding.level1.setOnClickListener(this);
+        binding.level2.setOnClickListener(this);
+        binding.level3.setOnClickListener(this);
+        binding.level4.setOnClickListener(this);
 
-        addEvents();
         return view;
-    }
-
-    private void addEvents() {
-        level1.setOnClickListener(this);
-        level2.setOnClickListener(this);
-        level3.setOnClickListener(this);
-        level4.setOnClickListener(this);
-
     }
 
     @Override
