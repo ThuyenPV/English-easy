@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView mMainNav;
     private FrameLayout mMainFrame;
     //--------
-    private ExercisesFragment exercisesFragment;
-    private ExplanationFragment explanationFragment;
-    private CoursesFragment coursesFragment;
-    private TranslateFragment translateFragment;
+//    private ExercisesFragment exercisesFragment;
+//    private ExplanationFragment explanationFragment;
+//    private CoursesFragment coursesFragment;
+//    private TranslateFragment translateFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,18 +42,18 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.nav_home:
-                        setFragment(coursesFragment);
+                        setFragment(new CoursesFragment());
                         return true;
 
                     case R.id.nav_notifi:
-                        setFragment(exercisesFragment);
+                        setFragment(new ExercisesFragment());
                         return true;
 
                     case R.id.nav_account:
-                        setFragment(explanationFragment);
+                        setFragment(new ExplanationFragment());
                         return true;
                     case R.id.nav_translate:
-                        setFragment(translateFragment);
+                        setFragment(new TranslateFragment());
                         return true;
 
                     default:
@@ -76,12 +76,7 @@ public class MainActivity extends AppCompatActivity {
         mMainFrame = findViewById(R.id.main_frame);
         mMainNav = findViewById(R.id.nav_main);
 
-        exercisesFragment = new ExercisesFragment();
-        coursesFragment = new CoursesFragment();
-        explanationFragment = new ExplanationFragment();
-        translateFragment = new TranslateFragment();
-
-        setFragment(coursesFragment);
+        setFragment(new CoursesFragment());
 
     }
 }

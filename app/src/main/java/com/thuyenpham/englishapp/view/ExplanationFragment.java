@@ -1,7 +1,9 @@
 package com.thuyenpham.englishapp.view;
 
 
+import android.app.Activity;
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.englishapp.R;
+import com.example.englishapp.databinding.FragmentExplanationBinding;
 import com.thuyenpham.englishapp.presenter.ExplanationActivity;
 
 
@@ -44,35 +47,21 @@ public class ExplanationFragment extends Fragment implements View.OnClickListene
         // Inflate the layout for this fragment
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         View view = layoutInflater.inflate(R.layout.fragment_explanation, container, false);
+        FragmentExplanationBinding binding= DataBindingUtil.setContentView((Activity) getContext(),R.layout.fragment_explanation);
 
-        expl1 = view.findViewById(R.id.ex1);
-        expl2 = view.findViewById(R.id.ex2);
-        expl3 = view.findViewById(R.id.ex3);
-        expl4 = view.findViewById(R.id.ex4);
-        expl5 = view.findViewById(R.id.ex5);
-        expl6 = view.findViewById(R.id.ex6);
-        expl7 = view.findViewById(R.id.ex7);
-        expl8 = view.findViewById(R.id.ex8);
-        expl9 = view.findViewById(R.id.ex9);
-        expl10 = view.findViewById(R.id.ex10);
 
-        addEvents();
+        binding.ex1.setOnClickListener(this);
+        binding.ex2.setOnClickListener(this);
+        binding.ex3.setOnClickListener(this);
+        binding.ex4.setOnClickListener(this);
+        binding.ex5.setOnClickListener(this);
+        binding.ex6.setOnClickListener(this);
+        binding.ex7.setOnClickListener(this);
+        binding.ex8.setOnClickListener(this);
+        binding.ex9.setOnClickListener(this);
+        binding.ex10.setOnClickListener(this);
+
         return view;
-    }
-
-    private void addEvents() {
-
-        expl1.setOnClickListener(this);
-        expl2.setOnClickListener(this);
-        expl3.setOnClickListener(this);
-        expl4.setOnClickListener(this);
-        expl5.setOnClickListener(this);
-        expl6.setOnClickListener(this);
-        expl7.setOnClickListener(this);
-        expl8.setOnClickListener(this);
-        expl9.setOnClickListener(this);
-        expl10.setOnClickListener(this);
-
     }
 
 
